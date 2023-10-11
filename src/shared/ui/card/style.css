@@ -1,0 +1,32 @@
+.container {
+    perspective: 1000px;
+    min-width: 320px;
+    min-height: 320px;
+    border: 1px solid rgba(234, 234, 234, 0.8);
+    border-radius: var(--main-radius);
+    padding: var(--px24);
+    background-color: rgba(246, 246, 246, 0.8);
+    font-size: var(--px24);
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}

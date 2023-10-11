@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: minmax(max-content, 1170px);
+    justify-content: center;
+    height: 100vh;
+}
